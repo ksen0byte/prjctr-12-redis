@@ -15,7 +15,7 @@ UI can be accessed at [localhost:7843](http://localhost:7843/).
 
 ## Basic Redis
 
-To run:
+To run [demo_redis_basic.sh](./redis-demo/scripts/demo_redis_basic.sh):
 ```bash
 docker compose run redis-demo ./demo_redis_basic.sh
 ```
