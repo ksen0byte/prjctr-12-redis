@@ -89,7 +89,7 @@ flags slave
 
 New values aren’t saved when memory limit is reached. When a database uses replication, this applies to the primary database.
 
-To run:
+To run [demo_noeviction.sh](./redis-demo/scripts/demo_noeviction.sh):
 ```bash
 docker compose run redis-demo ./demo_noeviction.sh
 ```
@@ -129,7 +129,7 @@ Demonstration complete.
 
 Keeps most recently used keys; removes least recently used (LRU) keys.
 
-To run:
+To run [demo_allkeys_lru.sh](./redis-demo/scripts/demo_allkeys_lru.sh):
 ```bash
 docker compose run redis-demo ./demo_allkeys_lru.sh
 ```
@@ -186,7 +186,7 @@ Demonstration complete.
 
 Keeps frequently used keys; removes least frequently used (LFU) keys.
 
-To run:
+To run [demo_allkeys_lfu.sh](./redis-demo/scripts/demo_allkeys_lfu.sh):
 ```bash
 docker compose run redis-demo ./demo_allkeys_lfu.sh
 ```
@@ -243,7 +243,7 @@ Demonstration complete.
 
 Removes least recently used keys with the expire field set to true.
 
-To run:
+To run [demo_volatile_lru.sh](./redis-demo/scripts/demo_volatile_lru.sh):
 ```bash
 docker compose run redis-demo ./demo_volatile_lru.sh
 ```
@@ -306,7 +306,7 @@ Demonstration complete.
 
 Removes least frequently used keys with the expire field set to true.
 
-To run:
+To run [demo_volatile_lfu.sh](./redis-demo/scripts/demo_volatile_lfu.sh):
 ```bash
 docker compose run redis-demo ./demo_volatile_lfu.sh
 ```
@@ -369,7 +369,7 @@ Demonstration complete.
 
 Randomly removes keys to make space for the new data added.
 
-To run:
+To run [demo_allkeys_random.sh](./redis-demo/scripts/demo_allkeys_random.sh):
 ```bash
 docker compose run redis-demo ./demo_allkeys_random.sh
 ```
@@ -423,7 +423,7 @@ Demonstration complete.
 
 Randomly removes keys with expire field set to true.
 
-To run:
+To run [demo_volatile_random.sh](./redis-demo/scripts/demo_volatile_random.sh):
 ```bash
 docker compose run redis-demo ./demo_volatile_random.sh
 ```
@@ -483,7 +483,7 @@ Demonstration complete.
 
 Removes keys with expire field set to true and the shortest remaining time-to-live (TTL) value.
 
-To run:
+To run [demo_volatile_ttl.sh](./redis-demo/scripts/demo_volatile_ttl.sh):
 ```bash
 docker compose run redis-demo ./demo_volatile_ttl.sh
 ```
@@ -559,7 +559,7 @@ Demonstration complete.
 
 ## Probabilistic Cache
 
-To run:
+To run [demo_probabilistic_cache_wrapper.sh](./redis-demo/scripts/demo_probabilistic_cache_wrapper.sh):
 ```bash
 docker compose run redis-demo ./demo_probabilistic_cache_wrapper.sh
 ```
